@@ -1,132 +1,45 @@
 @charset 'utf-8';
-textarea {
-  min-width: 342px;
-  min-height: 112px;
-  max-width: 500px;
-  max-height: 300px;
-  outline: none;
-  padding: 6px 8px;
-  border: 1px solid #e6e6e6;
-  line-height: 1.8em;
-}
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="color"] {
-  min-height: 24px;
-  padding: 2px 8px;
+.vi-input {
+  height: 22px;
+  padding: 4px 7px;
   outline: none;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
+  line-height: 1.5;
 }
-input[type="text"].input-xs,
-input[type="password"].input-xs,
-input[type="number"].input-xs,
-input[type="search"].input-xs,
-input[type="datetime"].input-xs,
-input[type="datetime-local"].input-xs,
-input[type="date"].input-xs,
-input[type="month"].input-xs,
-input[type="time"].input-xs,
-input[type="week"].input-xs,
-input[type="email"].input-xs,
-input[type="url"].input-xs,
-input[type="tel"].input-xs,
-input[type="color"].input-xs {
+.vi-input:focus {
+  border-color: #0f69dc;
+}
+.vi-input.input-xs {
   width: 54px;
 }
-input[type="text"].input-sm,
-input[type="password"].input-sm,
-input[type="number"].input-sm,
-input[type="search"].input-sm,
-input[type="datetime"].input-sm,
-input[type="datetime-local"].input-sm,
-input[type="date"].input-sm,
-input[type="month"].input-sm,
-input[type="time"].input-sm,
-input[type="week"].input-sm,
-input[type="email"].input-sm,
-input[type="url"].input-sm,
-input[type="tel"].input-sm,
-input[type="color"].input-sm {
+.vi-input.input-sm {
   width: 92px;
 }
-input[type="text"].input-lg,
-input[type="password"].input-lg,
-input[type="number"].input-lg,
-input[type="search"].input-lg,
-input[type="datetime"].input-lg,
-input[type="datetime-local"].input-lg,
-input[type="date"].input-lg,
-input[type="month"].input-lg,
-input[type="time"].input-lg,
-input[type="week"].input-lg,
-input[type="email"].input-lg,
-input[type="url"].input-lg,
-input[type="tel"].input-lg,
-input[type="color"].input-lg {
+.vi-input.input-lg {
   width: 282px;
 }
-input[type="text"].input-xl,
-input[type="password"].input-xl,
-input[type="number"].input-xl,
-input[type="search"].input-xl,
-input[type="datetime"].input-xl,
-input[type="datetime-local"].input-xl,
-input[type="date"].input-xl,
-input[type="month"].input-xl,
-input[type="time"].input-xl,
-input[type="week"].input-xl,
-input[type="email"].input-xl,
-input[type="url"].input-xl,
-input[type="tel"].input-xl,
-input[type="color"].input-xl {
+.vi-input.input-xl {
   width: 362px;
 }
-textarea.error,
-input[type="text"].error,
-input[type="password"].error,
-input[type="number"].error,
-input[type="search"].error,
-input[type="datetime"].error,
-input[type="datetime-local"].error,
-input[type="date"].error,
-input[type="month"].error,
-input[type="time"].error,
-input[type="week"].error,
-input[type="email"].error,
-input[type="url"].error,
-input[type="tel"].error,
-input[type="color"].error {
-  border: 1px solid #e60000 !important;
+.vi-input.error {
+  border: 1px solid #e60000;
 }
-textarea.focus,
-input[type="text"].focus,
-input[type="password"].focus,
-input[type="number"].focus,
-input[type="search"].focus,
-input[type="datetime"].focus,
-input[type="datetime-local"].focus,
-input[type="date"].focus,
-input[type="month"].focus,
-input[type="time"].focus,
-input[type="week"].focus,
-input[type="email"].focus,
-input[type="url"].focus,
-input[type="tel"].focus,
-input[type="color"].focus {
-  border: 1px solid #0f69dc !important;
+.vi-input.focus {
+  border: 1px solid #0f69dc;
 }
-.cn-input:focus {
-  border-color: #0f69dc;
+.vi-input[disabled] {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+}
+.vi-input-large {
+  height: 26px;
+}
+.vi-input-small {
+  height: 18px;
+}
+textarea.vi-input {
+  min-width: 260px;
+  min-height: 120px;
+  border-radius: 4px;
 }

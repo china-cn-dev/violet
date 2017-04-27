@@ -2,36 +2,16 @@
 @defaultborder: #e6e6e6;
 @errorborder: #e60000;
 @focusborder: #0f69dc;
-textarea {
-    min-width: 342px;
-    min-height: 112px;
-    max-width: 500px;
-    max-height: 300px;
-    outline: none;
-    padding: 6px 8px;
-    border: 1px solid @defaultborder;
-    line-height: 1.8em;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="color"] {
-    min-height: 24px;
-    padding: 2px 8px;
+.vi-input {
+    height: 22px;
+    padding: 4px 7px;
     outline: none;
     border: 1px solid @defaultborder;
     border-radius: 3px;
+    line-height: 1.5;
+    &:focus {
+        border-color: @focusborder;
+    }
     &.input-xs {
         width: 54px;
     }
@@ -44,31 +24,31 @@ input[type="color"] {
     &.input-xl {
         width: 362px;
     }
-}
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="color"] {
     &.error {
-        border: 1px solid @errorborder !important;
+        border: 1px solid @errorborder;
     }
     &.focus {
-        border: 1px solid @focusborder !important;
+        border: 1px solid @focusborder;
     }
 }
 
-.cn-input:focus {
-    border-color: @focusborder;
+.vi-input[disabled] {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+}
+
+.vi-input-large {
+    height: 26px;
+}
+
+.vi-input-small {
+    height: 18px;
+}
+
+textarea {
+    &.vi-input {
+        min-width: 260px;
+        min-height: 120px;
+        border-radius: 4px;
+    }
 }
