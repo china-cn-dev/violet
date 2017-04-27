@@ -46,7 +46,7 @@ var CustomSelect = (function() {
             if ($options.length > 0) {
                 $option = $options.last();
             } else {
-                $options = $this.find('li');
+                $options = $this.find('.select-item');
                 $option = $options.first();
             }
             var $board = $this.prev().find('.board');
@@ -75,8 +75,9 @@ var CustomSelect = (function() {
             self._selects.removeClass('select-visible');
         });
         // choice
-        this._optionGroup.on('click', 'li', function() {
+        this._optionGroup.on('click', '.select-item', function() {
             var $this = $(this);
+            var $currentSelect = $this.parents('[data-role="custom-select"]');
             //hide option group
             var $currentOptionGroup = $this.parents('[data-role="option-group"]');
             $currentOptionGroup.hide();
@@ -84,12 +85,12 @@ var CustomSelect = (function() {
             var $currentHeadGroup = $currentOptionGroup.prev();
             var $board = $currentHeadGroup.find('.board');
             if ($board.data('code') === $this.attr('code')) {
+                $currentSelect.removeClass('select-visible');
                 return;
             }
             //change
             var data = { value: $this.text(), code: $this.attr('code') };
             $board.text(data.value).data('code', data.code);
-            var $currentSelect = $this.parents('[data-role="custom-select"]');
             //default input
             $currentSelect.find('.select-input').val(data.code);
             $currentSelect.removeClass('select-visible');
