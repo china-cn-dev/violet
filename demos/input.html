@@ -5,20 +5,45 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/input.css">
+    <style type="text/css">
+    p {
+        margin: 10px 0px;
+    }
+    </style>
 </head>
 
 <body>
     <div style="padding: 50px 50px;background-color: #ffffff;">
         <div>
+            <p>基本使用</p>
+            <input type="text" class="vi-input" placeholder="default">
+        </div>
+        <div>
+            <p>尺寸</p>
             <input type="text" class="vi-input vi-input-small" placeholder="small">
             <input type="text" class="vi-input" placeholder="default">
             <input type="text" class="vi-input vi-input-large" placeholder="large">
-            <input type="text" class="vi-input" placeholder="disabled" disabled>
-            <input type="text" class="vi-input error" placeholder="default">
-            <input type="text" class="vi-input focus" placeholder="default">
+            <p>长度</p>
+            <input type="text" class="vi-input input-xs" placeholder="input-xs">
+            <input type="text" class="vi-input input-sm" placeholder="input-sm">
+            <input type="text" class="vi-input" placeholder="">
+            <input type="text" class="vi-input input-lg" placeholder="input-lg">
+            <input type="text" class="vi-input input-xl" placeholder="input-xl">
         </div>
         <div>
+            <p>禁用</p>
+            <input type="text" class="vi-input" placeholder="disabled" disabled>
+        </div>
+        <div>
+            <p>边框颜色</p>
+            <input type="text" class="vi-input error" placeholder="error">
+            <input type="text" class="vi-input focus" placeholder="focus">
+        </div>
+        <div>
+            <p>文本域</p>
             <textarea class="vi-input"></textarea>
+            <p>通过设置属性 rows 控制文本域默认显示的行数</p>
+            <textarea class="vi-input" rows="5"></textarea>
         </div>
     </div>
 </body>

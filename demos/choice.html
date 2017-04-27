@@ -9,43 +9,101 @@
     .group {
         margin: 15px 0px;
     }
+
+    .wrap {
+        border: 1px dashed #e3e3e3;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
     </style>
 </head>
 
 <body>
-    <div style="width: 980px;margin: 0px auto;">
+    <div style="margin: 0px auto;background-color: #ffffff;padding: 25px 50px;">
         <div class="group">
-            <p style="font-weight: bold;font-size: 14px;">radio</p>
-            <label class="radio-btn radio-default checked">
-                <input type="radio" name="fav" checked="true" value="0">苹果</label>
-            <label class="radio-btn radio-default">
-                <input type="radio" name="fav" value="1">香蕉</label>
-            <label class="radio-btn radio-default">
-                <input type="radio" name="fav" value="2">橘子</label>
-            <label class="radio-btn radio-default">
-                <input type="radio" name="fav" value="3">火龙果</label>
-            <label class="radio-btn radio-default disabled">
-                <input type="radio" name="fav" disabled="true" value="5">榴莲</label>
-            <label class="radio-btn radio-default checked disabled">
-                <input type="radio" checked="true" disabled="true" value="6">金柑</label>
-            <div class="js-demo-data-1">
+            <p>radio</p>
+            <div class="wrap">
+                <p>单独使用</p>
+                <div>
+                    <label class="radio-btn radio-default">
+                        <input type="radio" name="kingdee" value="0">冰蝶</label>
+                </div>
+                <p id="kingdee"></p>
+            </div>
+            <div class="wrap">
+                <p>组合使用</p>
+                <div>
+                    <label class="radio-btn radio-default checked">
+                        <input type="radio" name="fruit" checked="true" value="0">苹果</label>
+                    <label class="radio-btn radio-default">
+                        <input type="radio" name="fruit" value="1">香蕉</label>
+                    <label class="radio-btn radio-default">
+                        <input type="radio" name="fruit" value="2">橘子</label>
+                    <label class="radio-btn radio-default">
+                        <input type="radio" name="fruit" value="3">火龙果</label>
+                </div>
+                <p id="fruit"></p>
+            </div>
+            <div class="wrap">
+                <p>禁用</p>
+                <label class="radio-btn radio-default disabled">
+                    <input type="radio" name="nvidia" disabled="true" value="1">GTX1060</label>
+                <label class="radio-btn radio-default">
+                    <input type="radio" name="nvidia" value="2">GTX1070</label>
+                <label class="radio-btn radio-default">
+                    <input type="radio" name="nvidia" value="3">GTX1080</label>
+                <label class="radio-btn radio-default">
+                    <input type="radio" name="nvidia" value="4">GTX1080Ti</label>
+                <p id="nvidia"></p>
+                <label class="radio-btn radio-default checked disabled">
+                    <input type="radio" name="amd" disabled="true" checked="true" value="1">470d</label>
+                <p id="amd"></p>
             </div>
         </div>
         <div class="group">
-            <p style="font-weight: bold;font-size: 14px;">checkbox</p>
-            <label class="check-box check-default checked">
-                <input type="checkbox" name="fruit" checked="checked" value="1"> 苹果 </label>
-            <label class="check-box check-default">
-                <input type="checkbox" name="fruit" value="2"> 香蕉 </label>
-            <label class="check-box check-default">
-                <input type="checkbox" name="fruit" value="3"> 橘子 </label>
-            <label class="check-box check-default">
-                <input type="checkbox" name="fruit" value="4"> 火龙果 </label>
-            <label class="check-box check-default disabled">
-                <input type="checkbox" name="fruit" disabled="true" value="5"> 榴莲 </label>
-            <label class="check-box check-default checked disabled">
-                <input type="checkbox" name="fruit" checked="true" disabled="true" value="6"> 金柑 </label>
-            <div class="js-demo-data-2">
+            <p>checkbox</p>
+            <div class="wrap">
+                <p>单独使用</p>
+                <label class="check-box check-default">
+                    <input type="checkbox" name="radiator" value="1"> 玄冰400 </label>
+                <p id="radiator"></p>
+            </div>
+            <div class="wrap">
+                <p>组合使用</p>
+                <div>
+                    <label class="check-box check-default checked">
+                        <input type="checkbox" name="cpu" checked="checked" value="1"> i3 7100 </label>
+                    <label class="check-box check-default">
+                        <input type="checkbox" name="cpu" value="2"> i5 7500 </label>
+                    <label class="check-box check-default">
+                        <input type="checkbox" name="cpu" value="3"> i7 7600 </label>
+                    <label class="check-box check-default">
+                        <input type="checkbox" name="cpu" value="4"> i7 7700 </label>
+                </div>
+                <p id="cpu"></p>
+            </div>
+            <div class="wrap">
+                <p>禁用</p>
+                <div>
+                    <label class="check-box check-default disabled">
+                        <input type="checkbox" name="mainboard" disabled="true" value="1"> 微星 B250 Pro </label>
+                    <label class="check-box check-default">
+                        <input type="checkbox" name="mainboard" value="2"> 华硕 B250 PLUS </label>
+                    <label class="check-box check-default">
+                        <input type="checkbox" name="mainboard" value="3"> 技嘉 B250 D3H </label>
+                </div>
+                <p id="mainboard"></p>
+                <label class="check-box check-default checked disabled">
+                    <input type="checkbox" name="disk" checked="true" disabled="true" value="1"> 三星 850 EVO 250G STAT3</label>
+                <label class="check-box check-default">
+                    <input type="checkbox" name="disk" value="2"> 西部数据</label>
+                <label class="check-box check-default">
+                    <input type="checkbox" name="disk" value="3"> 希捷</label>
+                <p id="disk"></p>
             </div>
         </div>
     </div>
@@ -53,29 +111,48 @@
     <script type="text/javascript" src="../js/choice.js"></script>
     <script type="text/javascript">
     $(function() {
-        foo();
-        koo();
-        $('input[type="checkbox"]').on('change', function() {
-            foo();
+        $('#radiator').text($('input[name="radiator"]').prop('checked'));
+        $('input[name="radiator"]').on('change', function() {
+            $('#radiator').text(this.checked);
         });
 
-        $('input[type="radio"]').on('change', function() {
-            koo();
-        });
+        var cAry = ['cpu', 'mainboard', 'disk'];
 
-        function foo() {
-            var ary = [];
-            $('input[name="fruit"]:checked').each(function() {
-                ary.push($(this).parent().text());
+        for (let i = 0; i < cAry.length; i++) {
+            checkBox(cAry[i]);
+            $('input[name="' + cAry[i] + '"]').on('change', function() {
+                checkBox(cAry[i]);
             });
-            var data = ary.join(',');
-            $('.js-demo-data-2').empty().text('["' + data + '"]');
         }
 
-        function koo() {
-            var data = $('input[name="fav"]:checked').parent().text();
-            $('.js-demo-data-1').empty().text('["' + data + '"]');
+        function checkBox(key) {
+            var coll = [];
+            $('input[name="' + key + '"]:checked').each(function() {
+                coll.push($(this).parent().text());
+            });
+            var data = coll.join(',');
+            $('#' + key).empty().text('["' + data + '"]');
         }
+
+        $('#kingdee').text($('input[name="kingdee"]').prop('checked'));
+        $('input[name="kingdee"]').on('change', function() {
+            $('#kingdee').text(this.checked);
+        });
+
+        var rAry = ['fruit', 'nvidia', 'amd'];
+
+        for (let i = 0; i < rAry.length; i++) {
+            radioBox(rAry[i]);
+            $('input[name="' + rAry[i] + '"]').on('change', function() {
+                radioBox(rAry[i]);
+            });
+        }
+
+        function radioBox(key) {
+            var data = $('input[name="' + key + '"]:checked').parent().text();
+            $('#' + key).empty().text('["' + data + '"]');
+        }
+
     });
     </script>
 </body>
