@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/select.css">
+    <style type="text/css">
+    .custom-select {
+        margin-right: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 50px 50px">
+        <div id="select1" data-role="custom-select" class="custom-select select-small">
+            <div data-role="head-group" class="select-selection">
+                <span class="board">北京市</span>
+            </div>
+            <div data-role="option-group" class="select-dropdown">
+                <ul>
+                    <li code="beijing"> 北京市 </li>
+                    <li code="shanghai"> 上海市 </li>
+                    <li code="shenzhen"> 深圳市 </li>
+                    <li code="hangzhou"> 杭州市 </li>
+                    <li code="nanjing"> 南京市 </li>
+                    <li code="chongqing"> 重庆市 </li>
+                </ul>
+            </div>
+        </div>
+        <div id="select2" data-role="custom-select" class="custom-select select-default">
+            <div data-role="head-group" class="select-selection">
+                <span class="board">北京市</span>
+            </div>
+            <div data-role="option-group" class="select-dropdown">
+                <ul>
+                    <li code="beijing"> 北京市 </li>
+                    <li code="shanghai"> 上海市 </li>
+                    <li code="shenzhen"> 深圳市 </li>
+                    <li code="hangzhou"> 杭州市 </li>
+                    <li code="nanjing"> 南京市 </li>
+                    <li code="chongqing"> 重庆市 </li>
+                </ul>
+            </div>
+        </div>
+        <div id="select3" data-role="custom-select" class="custom-select select-large">
+            <div data-role="head-group" class="select-selection">
+                <span class="board">北京市</span>
+            </div>
+            <div data-role="option-group" class="select-dropdown">
+                <ul>
+                    <li code="beijing"> 北京市 </li>
+                    <li code="shanghai"> 上海市 </li>
+                    <li code="shenzhen"> 深圳市 </li>
+                    <li code="hangzhou"> 杭州市 </li>
+                    <li code="nanjing"> 南京市 </li>
+                    <li code="chongqing"> 重庆市 </li>
+                    <li code="xiamen"> 厦门市 </li>
+                </ul>
+            </div>
+        </div>
+        <div style="height: 30px;line-height: 30px;float: left;margin-left: 10px;"><span id="selected"></span></div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/select.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        CustomSelect.init();
+        $('#selected').text(CustomSelect.getValue('select2')['code']);
+        $('#select1,#select2,#select3').on('change', function(e, data) {
+            $('#selected').text(data.code);
+        });
+    });
+    </script>
+</body>
+
+</html>
