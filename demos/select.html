@@ -9,58 +9,141 @@
     .custom-select {
         margin-right: 15px;
     }
+
+    p {
+        margin: 15px 0px;
+    }
     </style>
 </head>
 
-<body>
-    <div style="padding: 50px 50px">
-        <div id="select1" data-role="custom-select" class="custom-select select-small">
-            <div data-role="head-group" class="select-selection">
-                <span class="board">北京市</span>
-            </div>
-            <div data-role="option-group" class="select-dropdown">
-                <ul>
-                    <li code="beijing"> 北京市 </li>
-                    <li code="shanghai"> 上海市 </li>
-                    <li code="shenzhen"> 深圳市 </li>
-                    <li code="hangzhou"> 杭州市 </li>
-                    <li code="nanjing"> 南京市 </li>
-                    <li code="chongqing"> 重庆市 </li>
-                </ul>
-            </div>
-        </div>
-        <div id="select2" data-role="custom-select" class="custom-select select-default">
-            <div data-role="head-group" class="select-selection">
-                <span class="board">北京市</span>
-            </div>
-            <div data-role="option-group" class="select-dropdown">
-                <ul>
-                    <li code="beijing"> 北京市 </li>
-                    <li code="shanghai"> 上海市 </li>
-                    <li code="shenzhen"> 深圳市 </li>
-                    <li code="hangzhou"> 杭州市 </li>
-                    <li code="nanjing"> 南京市 </li>
-                    <li code="chongqing"> 重庆市 </li>
-                </ul>
+<body style="background-color: #fff;">
+    <div style="height: 30px;line-height: 30px;float: left;margin-left: 50px;color: #0f69dc;"><span id="selected"></span></div>
+    <div style="padding: 25px 50px">
+        <div class="fl-clr">
+            <p>基本使用</p>
+            <div id="select1" data-role="custom-select" class="custom-select select-small">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="select-item" code="beijing"> 北京市 </li>
+                        <li class="select-item" code="shanghai"> 上海市 </li>
+                        <li class="select-item" code="shenzhen"> 深圳市 </li>
+                        <li class="select-item" code="hangzhou"> 杭州市 </li>
+                        <li class="select-item" code="nanjing"> 南京市 </li>
+                        <li class="select-item" code="chongqing"> 重庆市 </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="select3" data-role="custom-select" class="custom-select select-large">
-            <div data-role="head-group" class="select-selection">
-                <span class="board">北京市</span>
+        <div class="fl-clr">
+            <p>尺寸</p>
+            <div id="select2" data-role="custom-select" class="custom-select select-small">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="select-item" code="beijing"> 北京市 </li>
+                        <li class="select-item" code="shanghai"> 上海市 </li>
+                        <li class="select-item" code="shenzhen"> 深圳市 </li>
+                        <li class="select-item" code="hangzhou"> 杭州市 </li>
+                        <li class="select-item" code="nanjing"> 南京市 </li>
+                        <li class="select-item" code="chongqing"> 重庆市 </li>
+                    </ul>
+                </div>
             </div>
-            <div data-role="option-group" class="select-dropdown">
-                <ul>
-                    <li code="beijing"> 北京市 </li>
-                    <li code="shanghai"> 上海市 </li>
-                    <li code="shenzhen"> 深圳市 </li>
-                    <li code="hangzhou"> 杭州市 </li>
-                    <li code="nanjing"> 南京市 </li>
-                    <li code="chongqing"> 重庆市 </li>
-                    <li code="xiamen"> 厦门市 </li>
-                </ul>
+            <div id="select3" data-role="custom-select" class="custom-select select-default">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="select-item" code="beijing"> 北京市 </li>
+                        <li class="select-item" code="shanghai"> 上海市 </li>
+                        <li class="select-item" code="shenzhen"> 深圳市 </li>
+                        <li class="select-item" code="hangzhou"> 杭州市 </li>
+                        <li class="select-item" code="nanjing"> 南京市 </li>
+                        <li class="select-item" code="chongqing"> 重庆市 </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="select4" data-role="custom-select" class="custom-select select-large">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="select-item" code="beijing"> 北京市 </li>
+                        <li class="select-item" code="shanghai"> 上海市 </li>
+                        <li class="select-item" code="shenzhen"> 深圳市 </li>
+                        <li class="select-item" code="hangzhou"> 杭州市 </li>
+                        <li class="select-item" code="nanjing"> 南京市 </li>
+                        <li class="select-item" code="chongqing"> 重庆市 </li>
+                        <li class="select-item" code="xiamen"> 厦门市 </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div style="height: 30px;line-height: 30px;float: left;margin-left: 10px;"><span id="selected"></span></div>
+        <div class="fl-clr">
+            <p>分组</p>
+            <div id="select5" data-role="custom-select" class="custom-select select-default" style="width: 200px;">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="group-wrap">
+                            <div class="group-title">热门城市</div>
+                            <ul>
+                                <li class="select-item" code="beijing"> 北京市 </li>
+                                <li class="select-item" code="shanghai"> 上海市 </li>
+                                <li class="select-item" code="shenzhen"> 深圳市 </li>
+                                <li class="select-item" code="hangzhou"> 杭州市 </li>
+                            </ul>
+                        </li>
+                        <li class="group-wrap">
+                            <div class="group-title">其他城市</div>
+                            <ul>
+                                <li class="select-item" code="nanjing"> 南京市 </li>
+                                <li class="select-item" code="chongqing"> 重庆市 </li>
+                                <li class="select-item" code="xiamen"> 厦门市 </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fl-clr">
+            <p>默认选中项</p>
+            <div id="select6" data-role="custom-select" class="custom-select select-default" style="width: 200px;">
+                <div data-role="head-group" class="select-selection">
+                    <span class="board">北京市</span>
+                </div>
+                <div data-role="option-group" class="select-dropdown">
+                    <ul>
+                        <li class="group-wrap">
+                            <div class="group-title">热门城市</div>
+                            <ul>
+                                <li class="select-item" code="beijing"> 北京市 </li>
+                                <li class="select-item" code="shanghai"> 上海市 </li>
+                                <li class="select-item" code="shenzhen"> 深圳市 </li>
+                                <li selected class="select-item" code="hangzhou"> 杭州市 </li>
+                            </ul>
+                        </li>
+                        <li class="group-wrap">
+                            <div class="group-title">其他城市</div>
+                            <ul>
+                                <li class="select-item" code="nanjing"> 南京市 </li>
+                                <li class="select-item" code="chongqing"> 重庆市 </li>
+                                <li class="select-item" code="xiamen"> 厦门市 </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/select.js"></script>
@@ -68,7 +151,7 @@
     $(document).ready(function() {
         CustomSelect.init();
         $('#selected').text(CustomSelect.getValue('select2')['code']);
-        $('#select1,#select2,#select3').on('change', function(e, data) {
+        $('#select1,#select2,#select3,#select4,#select5,#select6').on('change', function(e, data) {
             $('#selected').text(data.code);
         });
     });
