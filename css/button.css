@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+/*mixin*/
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*style*/
+.btn {
+  text-decoration: none;
+  border: solid 1px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 11px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+  background: #ffffff;
+  border-color: #e6e6e6;
+  color: #333333;
+}
+.btn:hover {
+  background: #0f69dc;
+  border-color: #0f69dc;
+  color: #ffffff;
+}
+.btn.btn-primary {
+  background: #0f69dc;
+  border-color: #0f69dc;
+  color: #ffffff;
+}
+.btn.btn-primary:hover {
+  background: #0059d6;
+  border-color: #0059d6;
+  color: #ffffff;
+}
+.btn.btn-info {
+  background: #3abfe7;
+  border-color: #3abfe7;
+  color: #ffffff;
+}
+.btn.btn-info:hover {
+  background: #1da9d3;
+  border-color: #1da9d3;
+  color: #ffffff;
+}
+.btn.btn-success {
+  background: #66bb00;
+  border-color: #66bb00;
+  color: #ffffff;
+}
+.btn.btn-success:hover {
+  background: #5dab00;
+  border-color: #5dab00;
+  color: #ffffff;
+}
+.btn.btn-warning {
+  background: #ffb30f;
+  border-color: #ffb30f;
+  color: #ffffff;
+}
+.btn.btn-warning:hover {
+  background: #f9aa00;
+  border-color: #f9aa00;
+  color: #ffffff;
+}
+.btn.btn-danger {
+  background: #e60000;
+  border-color: #e60000;
+  color: #ffffff;
+}
+.btn.btn-danger:hover {
+  background: #d20000;
+  border-color: #d20000;
+  color: #ffffff;
+}
+.btn.btn-inverse {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
+.btn.btn-inverse:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+.btn.btn-package {
+  background: #87a5db;
+  border-color: #87a5db;
+  color: #ffffff;
+}
+.btn.btn-package:hover {
+  background: #749add;
+  border-color: #749add;
+  color: #ffffff;
+}
+.btn.btn-gray {
+  background: #f3f3f3;
+  border-color: #e6e6e6;
+  color: #333333;
+}
+.btn.btn-gray:hover {
+  background: #247ef2;
+  border-color: #247ef2;
+  color: #ffffff;
+}
+.btn.btn-link {
+  background: none;
+  border-color: none;
+  color: #0f69dc;
+  border: none;
+}
+.btn.btn-link:hover {
+  background: none;
+  border-color: none;
+  color: #0059d6;
+  text-decoration: underline;
+}
+.btn.disabled {
+  background: #f3f3f3;
+  border-color: #e6e6e6;
+  color: #b2b2b2;
+  cursor: default;
+}
+.btn.disabled:hover {
+  background: #f3f3f3;
+  border-color: #e6e6e6;
+  color: #b2b2b2;
+}
+.btn.btn-round {
+  padding: 0 20px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+}
+.btn.btn-round.btn-default {
+  padding: 0 26px;
+  font-size: 14px;
+  border-radius: 26px;
+  height: 34px;
+  display: inline-block;
+  line-height: 34px;
+}
+.btn.btn-round.btn-large {
+  padding: 0 40px;
+  font-size: 16px;
+  border-radius: 26px;
+  height: 38px;
+  display: inline-block;
+  line-height: 38px;
+}
+.btn.btn-round.btn-small {
+  padding: 0 22px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+}
+.btn.btn-round.btn-mini {
+  padding: 0 6px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 22px;
+  display: inline-block;
+  line-height: 22px;
+}
+.btn.btn-straight {
+  padding: 0 11px;
+  font-size: 12px;
+  border-radius: 0px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+}
+.btn.btn-default {
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  height: 34px;
+  display: inline-block;
+  line-height: 34px;
+}
+.btn.btn-large {
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 3px;
+  height: 38px;
+  display: inline-block;
+  line-height: 38px;
+}
+.btn.btn-small {
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+}
+.btn.btn-mini {
+  padding: 0 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 22px;
+  display: inline-block;
+  line-height: 22px;
+}
+.btn.primary {
+  background: #ffffff;
+  border-color: #0f69dc;
+  color: #0f69dc;
+}
+.btn.primary:hover {
+  background: #0f69dc;
+  border-color: #0f69dc;
+  color: #ffffff;
+}
+.btn.info {
+  background: #ffffff;
+  border-color: #3abfe7;
+  color: #3abfe7;
+}
+.btn.info:hover {
+  background: #3abfe7;
+  border-color: #3abfe7;
+  color: #ffffff;
+}
+.btn.success {
+  background: #ffffff;
+  border-color: #66bb00;
+  color: #66bb00;
+}
+.btn.success:hover {
+  background: #66bb00;
+  border-color: #66bb00;
+  color: #ffffff;
+}
+.btn.warning {
+  background: #ffffff;
+  border-color: #ffb30f;
+  color: #ffb30f;
+}
+.btn.warning:hover {
+  background: #ffb30f;
+  border-color: #ffb30f;
+  color: #ffffff;
+}
+.btn.danger {
+  background: #ffffff;
+  border-color: #e60000;
+  color: #e60000;
+}
+.btn.danger:hover {
+  background: #e60000;
+  border-color: #e60000;
+  color: #ffffff;
+}
+.btn.inverse {
+  background: #ffffff;
+  border-color: #333333;
+  color: #333333;
+}
+.btn.inverse:hover {
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff;
+}
+.btn.package {
+  background: rgba(0, 0, 0, 0);
+  border-color: #87a5db;
+  color: #87a5db;
+}
+.btn.package:hover {
+  background: #87a5db;
+  border-color: #87a5db;
+  color: #ffffff;
+}
+input[type="button"].btn,
+button.btn {
+  padding: 0 11px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 30px;
+  display: inline-block;
+  line-height: 28px;
+}
+input[type="button"].btn.btn-default,
+button.btn.btn-default {
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  height: 36px;
+  display: inline-block;
+  line-height: 34px;
+}
+input[type="button"].btn.btn-large,
+button.btn.btn-large {
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+  display: inline-block;
+  line-height: 38px;
+}
+input[type="button"].btn.btn-small,
+button.btn.btn-small {
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 26px;
+  display: inline-block;
+  line-height: 24px;
+}
+input[type="button"].btn.btn-mini,
+button.btn.btn-mini {
+  padding: 0 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  height: 24px;
+  display: inline-block;
+  line-height: 22px;
+}
+input[type="button"].btn.btn-round,
+button.btn.btn-round {
+  padding: 0 20px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 30px;
+  display: inline-block;
+  line-height: 28px;
+}
+input[type="button"].btn.btn-round.btn-default,
+button.btn.btn-round.btn-default {
+  padding: 0 26px;
+  font-size: 14px;
+  border-radius: 26px;
+  height: 36px;
+  display: inline-block;
+  line-height: 34px;
+}
+input[type="button"].btn.btn-round.btn-large,
+button.btn.btn-round.btn-large {
+  padding: 0 40px;
+  font-size: 16px;
+  border-radius: 26px;
+  height: 40px;
+  display: inline-block;
+  line-height: 38px;
+}
+input[type="button"].btn.btn-round.btn-small,
+button.btn.btn-round.btn-small {
+  padding: 0 22px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 26px;
+  display: inline-block;
+  line-height: 24px;
+}
+input[type="button"].btn.btn-round.btn-mini,
+button.btn.btn-round.btn-mini {
+  padding: 0 6px;
+  font-size: 12px;
+  border-radius: 26px;
+  height: 24px;
+  display: inline-block;
+  line-height: 22px;
+}
+input[type="button"].btn.btn-straight,
+button.btn.btn-straight {
+  padding: 0 11px;
+  font-size: 12px;
+  border-radius: 0px;
+  height: 30px;
+  display: inline-block;
+  line-height: 28px;
+}
