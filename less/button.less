@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+/*mixin*/
+.base(){
+   text-decoration:none; 
+   border:solid 1px;
+   text-align:center;
+   cursor:pointer;
+}
+.interactive(@background;@border;@color;){   
+	background:@background;
+	border-color:@border;	
+	color:@color;
+}
+.size(@padding;@font;@radius;@height;@block;@line;){
+	padding:@padding; 
+	font-size:@font;
+	border-radius:@radius;
+	height:@height;
+	display:@block;
+	line-height:@line;
+}
+input[type="button"]::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/*style*/
+.btn{
+    .base();
+	.size(0 11px;12px;3px;28px;inline-block;28px;);
+    .interactive(#fff;#e6e6e6;#333;);
+	&:hover{
+	    .interactive(#0f69dc;#0f69dc;#fff;);
+	}
+	&.btn-primary{
+	    .interactive(#0f69dc;#0f69dc;#fff;);
+		&:hover{
+		    .interactive(#0059d6;#0059d6;#fff;);    
+		}
+	}
+	&.btn-info{
+	    .interactive(#3abfe7;#3abfe7;#fff;);
+		&:hover{
+		    .interactive(#1da9d3;#1da9d3;#fff;);    
+		}
+	}
+	&.btn-success{
+	    .interactive(#66bb00;#66bb00;#fff;);
+		&:hover{
+		    .interactive(#5dab00;#5dab00;#fff;);    
+		}
+	}
+	&.btn-warning{
+	    .interactive(#ffb30f;#ffb30f;#fff;);
+		&:hover{
+		    .interactive(#f9aa00;#f9aa00;#fff;);    
+		}
+	}
+	&.btn-danger{
+	    .interactive(#e60000;#e60000;#fff;);
+		&:hover{
+		    .interactive(#d20000;#d20000;#fff;);    
+		}
+	}
+	&.btn-inverse{
+	    .interactive(#333333;#333333;#fff;);
+		&:hover{
+		    .interactive(#000000;#000000;#fff;);    
+		}
+	}
+	&.btn-package{
+	    .interactive(#87a5db;#87a5db;#fff;);
+		&:hover{
+		    .interactive(#749add;#749add;#fff;);
+		}
+	}
+	&.btn-gray{
+	    .interactive(#F3F3F3;#e6e6e6;#333;);
+		&:hover{
+		    .interactive(#247EF2;#247EF2;#fff;);
+		}
+	}
+	&.btn-link{
+	    .interactive(none;none;#0f69dc;);
+		border:none;
+		&:hover{
+		    .interactive(none;none;#0059d6;);
+			text-decoration:underline;   
+		}
+	}
+	&.disabled{
+	    .interactive(#f3f3f3;#e6e6e6;#b2b2b2;);
+		cursor:default;
+		&:hover{
+		    .interactive(#f3f3f3;#e6e6e6;#b2b2b2;);
+		}
+	}
+	&.btn-round{
+		.size(0 20px;12px;26px;28px;inline-block;28px;);
+		&.btn-default{
+	    .size(0 26px;14px;26px;34px;inline-block;34px;);
+	}
+		&.btn-large{
+	    .size(0 40px;16px;26px;38px;inline-block;38px;);
+	}
+		&.btn-small{
+	    .size(0 22px;12px;26px;24px;inline-block;24px;);
+	}
+		&.btn-mini{
+	    .size(0 6px;12px;26px;22px;inline-block;22px;);
+	}
+	}
+	&.btn-straight{
+	    .size(0 11px;12px;0px;28px;inline-block;28px;);	
+	}
+	&.btn-default{
+	    .size(0 10px;14px;3px;34px;inline-block;34px;);
+	}
+	&.btn-large{
+	    .size(0 16px;16px;3px;38px;inline-block;38px;);
+	}
+	&.btn-small{
+	    .size(0 10px;12px;3px;24px;inline-block;24px;);
+	}
+	&.btn-mini{
+	    .size(0 6px;12px;3px;22px;inline-block;22px;);
+	}	
+	&.primary{
+	    .interactive(#fff;#0f69dc;#0f69dc;);
+		&:hover{
+		    .interactive(#0f69dc;#0f69dc;#fff;);
+		}
+	}
+	&.info{
+	    .interactive(#fff;#3abfe7;#3abfe7;);
+		&:hover{
+		    .interactive(#3abfe7;#3abfe7;#fff;);
+		}
+	}
+	&.success{
+	    .interactive(#fff;#66bb00;#66bb00;);
+		&:hover{
+		    .interactive(#66bb00;#66bb00;#fff;);
+		}
+	}
+	&.warning{
+	    .interactive(#fff;#ffb30f;#ffb30f;);
+		&:hover{
+		    .interactive(#ffb30f;#ffb30f;#fff;);
+		}
+	}
+	&.danger{
+	    .interactive(#fff;#e60000;#e60000;);
+		&:hover{
+		    .interactive(#e60000;#e60000;#fff;);
+		}
+	}
+	&.inverse{
+	    .interactive(#fff;#333333;#333333;);
+		&:hover{
+		    .interactive(#333333;#333333;#fff;);
+		}
+	}
+	&.package{
+	    .interactive(rgba(0,0,0,0);#87a5db;#87a5db;);
+		&:hover{
+		    .interactive(#87a5db;#87a5db;#fff;);
+		}
+	}
+}
+input[type="button"],button{
+    &.btn{
+		.size(0 11px;12px;3px;30px;inline-block;28px;);
+		&.btn-default{
+	        .size(0 10px;14px;3px;36px;inline-block;34px;);
+		}
+		&.btn-large{
+			.size(0 16px;16px;4px;40px;inline-block;38px;);
+		}
+		&.btn-small{
+			.size(0 10px;12px;3px;26px;inline-block;24px;);
+		}
+		&.btn-mini{
+			.size(0 6px;12px;3px;24px;inline-block;22px;);
+		}
+		&.btn-round{
+			.size(0 20px;12px;26px;30px;inline-block;28px;);
+			&.btn-default{
+			    .size(0 26px;14px;26px;36px;inline-block;34px;);
+		    }
+			&.btn-large{
+			    .size(0 40px;16px;26px;40px;inline-block;38px;);
+		    }
+			&.btn-small{
+			    .size(0 22px;12px;26px;26px;inline-block;24px;);
+		    }
+			&.btn-mini{
+			    .size(0 6px;12px;26px;24px;inline-block;22px;);
+		    }
+		}
+		&.btn-straight{
+			.size(0 11px;12px;0px;30px;inline-block;28px;);	
+		}
+	}
+}
