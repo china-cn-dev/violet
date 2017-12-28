@@ -1,196 +1,332 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="../css/button.css">
-<style type="text/css">
-html{ background:#fff;}
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, form, th, td{margin:0; padding:0}
-body, button, input, select, textarea{font:12px/1.5 "Microsoft Yahei";}
-h1{ font-size:20px; font-weight:bold; margin:0 0 20px 10px; }
-section{ padding:50px 100px 0 100px; width:500px;}
-section:last-child{ margin-bottom:100px;}
-table{ width:350px;margin:30px 0 0 0; border:solid 1px #ddd;}
-.table1{ width:550px;}
-.table1 td{ padding:5px 0 5px 25px;}
-.btn-radius .table1{ width:600px;}
-th{ height:45px;background:#f9f9f9; border-left:solid 1px #ddd; font-size:15px;}
-td{ text-align:left; padding-left:25px; height:50px; border-top:solid 1px #ddd; border-left:solid 1px #ddd;}
-td:last-child{ text-align:center; padding:0;}
-td:first-child,th:first-child{ border-left:none;}
-tr:nth-child(odd) td{ background:#f9f9f9;}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<section>
-<h1>默认按钮</h1>
-<hr>
-<table cellpadding="0" cellspacing="0">
-    <tr>
-        <th width="35%">默认&触发</th>
-        <th width="40%">class=""</th>
-        <th width="25%">备注</th>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn">默认</a></td>
-        <td>btn</td>
-        <td>默认</td>     
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-primary">主要</a></td>
-        <td>btn&nbsp;btn-primary</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-info">信息</a></td>
-        <td>btn&nbsp;btn-info</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-success">成功</a></td>
-        <td>btn&nbsp;btn-success</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-warning">警告</a></td>
-        <td>btn&nbsp;btn-warning</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-danger">危险</a></td>
-        <td>btn&nbsp;btn-danger</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-inverse">反向</a></td>
-        <td>btn&nbsp;btn-inverse</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-gray">灰色</a></td>
-        <td>btn&nbsp;btn-gray</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn btn-link">链接</a></td>
-        <td>btn&nbsp;btn-link</td>
-        <td>锚点</td>
-    </tr>
-    <tr>
-        <td><a href="#" class="btn disabled">禁用</a></td>
-        <td>btn&nbsp;disabled</td>
-        <td></td>
-    </tr>
-</table>
-</section>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/button.css">
+		<style type="text/css">
+			html {
+				background: #fff;
+			}
+			
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			hr,
+			p,
+			blockquote,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			pre,
+			fieldset,
+			lengend,
+			button,
+			input,
+			textarea,
+			form,
+			th,
+			td {
+				margin: 0;
+				padding: 0
+			}
+			
+			body,
+			button,
+			input,
+			select,
+			textarea {
+				font: 12px/1.5 "Microsoft Yahei";
+			}
+			
+			h1 {
+				font-size: 20px;
+				font-weight: bold;
+				margin: 0 0 20px 10px;
+			}
+			
+			section {
+				padding: 50px 100px 0 100px;
+				width: 500px;
+			}
+			
+			section:last-child {
+				margin-bottom: 100px;
+			}
+			
+			table {
+				width: 350px;
+				margin: 30px 0 0 0;
+				border: solid 1px #ddd;
+			}
+			
+			.table1 {
+				width: 550px;
+			}
+			
+			.table1 td {
+				padding: 5px 0 5px 25px;
+			}
+			
+			.btn-radius .table1 {
+				width: 600px;
+			}
+			
+			th {
+				height: 45px;
+				background: #f9f9f9;
+				border-left: solid 1px #ddd;
+				font-size: 15px;
+			}
+			
+			td {
+				text-align: left;
+				padding-left: 25px;
+				height: 50px;
+				border-top: solid 1px #ddd;
+				border-left: solid 1px #ddd;
+			}
+			
+			td:last-child {
+				text-align: center;
+				padding: 0;
+			}
+			
+			td:first-child,
+			th:first-child {
+				border-left: none;
+			}
+			
+			tr:nth-child(odd) td {
+				background: #f9f9f9;
+			}
+		</style>
+	</head>
 
-<section class="btn-size">
-    <h1>按钮大小</h1>
-    <hr>
-    <table cellpadding="0" cellspacing="0" class="table1">
-        <tr>
-            <th width="40%">按钮</th>
-            <th width="35%">class=""</th>
-            <th width="25%">备注</th>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn">button</a></td>
-            <td>btn</td>
-            <td>高度：加边框30px</td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-default">default button</a></td>
-            <td>btn btn-default</td>
-            <td>高度：加边框36px</td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-large">large button</a></td>
-            <td>btn btn-large</td>
-            <td>高度：加边框40px</td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-small">small button</a></td>
-            <td>btn btn-small</td>
-            <td>高度：加边框26px</td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-mini">mini button</a></td>
-            <td>btn btn-mini</td>
-            <td>高度：加边框24px</td>
-        </tr>
-    </table>
-</section>
+	<body>
+		<section>
+			<h1>默认按钮</h1>
+			<hr>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th width="35%">默认&触发</th>
+					<th width="40%">class=""</th>
+					<th width="25%">备注</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn">默认</a>
+					</td>
+					<td>btn</td>
+					<td>默认</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-primary">主要</a>
+					</td>
+					<td>btn&nbsp;btn-primary</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-info">信息</a>
+					</td>
+					<td>btn&nbsp;btn-info</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-success">成功</a>
+					</td>
+					<td>btn&nbsp;btn-success</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-warning">警告</a>
+					</td>
+					<td>btn&nbsp;btn-warning</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-danger">危险</a>
+					</td>
+					<td>btn&nbsp;btn-danger</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-inverse">反向</a>
+					</td>
+					<td>btn&nbsp;btn-inverse</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-gray">灰色</a>
+					</td>
+					<td>btn&nbsp;btn-gray</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-link">链接</a>
+					</td>
+					<td>btn&nbsp;btn-link</td>
+					<td>锚点</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn disabled">禁用</a>
+					</td>
+					<td>btn&nbsp;disabled</td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
 
-<section class="btn-radius">
-    <h1>按钮圆角</h1>
-    <hr>
-    <table cellpadding="0" cellspacing="0" class="table1">
-        <tr>
-            <th width="40%">按钮</th>
-            <th width="35%">class=""</th>
-            <th width="25%">备注</th>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-round">round btn</a></td>
-            <td>btn btn-round</td>
-            <td>大圆角</td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-round btn-large">round large</a></td>
-            <td>btn btn-round btn-large</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn btn-straight">straight btn</a></td>
-            <td>btn btn-straight</td>
-            <td>无圆角</td>
-        </tr>
-    </table>
-</section>
+		<section class="btn-size">
+			<h1>按钮大小</h1>
+			<hr>
+			<table cellpadding="0" cellspacing="0" class="table1">
+				<tr>
+					<th width="40%">按钮</th>
+					<th width="35%">class=""</th>
+					<th width="25%">备注</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn">button</a>
+					</td>
+					<td>btn</td>
+					<td>高度：加边框30px</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-default">default button</a>
+					</td>
+					<td>btn btn-default</td>
+					<td>高度：加边框36px</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-large">large button</a>
+					</td>
+					<td>btn btn-large</td>
+					<td>高度：加边框40px</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-small">small button</a>
+					</td>
+					<td>btn btn-small</td>
+					<td>高度：加边框26px</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-mini">mini button</a>
+					</td>
+					<td>btn btn-mini</td>
+					<td>高度：加边框24px</td>
+				</tr>
+			</table>
+		</section>
 
-<section class="btn-border">
-    <h1>按钮边框色</h1>
-    <hr>
-    <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th width="35%">按钮</th>
-            <th width="40%">class=""</th>
-            <th width="25%">备注</th>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn primary">主要</a></td>
-            <td>btn&nbsp;primary</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn info">信息</a></td>
-            <td>btn&nbsp;info</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn success">成功</a></td>
-            <td>btn&nbsp;success</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn warning">警告</a></td>
-            <td>btn&nbsp;warning</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn danger">危险</a></td>
-            <td>btn&nbsp;danger</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="#" class="btn inverse">反向</a></td>
-            <td>btn&nbsp;inverse</td>
-            <td></td>
-        </tr>
-    </table>
-</section>
-</body>
+		<section class="btn-radius">
+			<h1>按钮圆角</h1>
+			<hr>
+			<table cellpadding="0" cellspacing="0" class="table1">
+				<tr>
+					<th width="40%">按钮</th>
+					<th width="35%">class=""</th>
+					<th width="25%">备注</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-round">round btn</a>
+					</td>
+					<td>btn btn-round</td>
+					<td>大圆角</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-round btn-large">round large</a>
+					</td>
+					<td>btn btn-round btn-large</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-straight">straight btn</a>
+					</td>
+					<td>btn btn-straight</td>
+					<td>无圆角</td>
+				</tr>
+			</table>
+		</section>
+
+		<section class="btn-border">
+			<h1>按钮边框色</h1>
+			<hr>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th width="35%">按钮</th>
+					<th width="40%">class=""</th>
+					<th width="25%">备注</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn primary">主要</a>
+					</td>
+					<td>btn&nbsp;primary</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn info">信息</a>
+					</td>
+					<td>btn&nbsp;info</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn success">成功</a>
+					</td>
+					<td>btn&nbsp;success</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn warning">警告</a>
+					</td>
+					<td>btn&nbsp;warning</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn danger">危险</a>
+					</td>
+					<td>btn&nbsp;danger</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn inverse">反向</a>
+					</td>
+					<td>btn&nbsp;inverse</td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
+	</body>
 </html>
